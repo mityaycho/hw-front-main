@@ -18,11 +18,12 @@
 		"web-vitals": "^2.1.0"
 	},
 	"scripts": {
-		"deploy": "gh-pages-deploy",
 		"start": "react-scripts start",
 		"build": "react-scripts build",
 		"test": "react-scripts test",
-		"eject": "react-scripts eject"
+		"eject": "react-scripts eject",
+		"predeploy": "npm run build",
+		"deploy": "gh-pages -d build"
 	},
 	"eslint.options": {
 		"configFile": "C:/mypath"
@@ -32,19 +33,6 @@
 			"react-app",
 			"react-app/jest"
 		]
-	},
-	"gh-pages-deploy": {
-		"staticpath": "dist",
-		"cname": "nope.org",
-		"prep": [
-			"build-sass",
-			"optimize-img"
-		],
-		"commit": "a custom commit message",
-		"post": [
-			"clean-source"
-		],
-		"noprompt": false
 	},
 	"browserslist": {
 		"production": [
@@ -59,6 +47,7 @@
 		]
 	},
 	"devDependencies": {
+		"gh-pages": "^6.0.0",
 		"gh-pages-deploy": "^0.5.1",
 		"prettier": "3.0.0"
 	}
