@@ -13,6 +13,6 @@ function App() {
       {/*<HW4 />*/}
     </div>
   );
-}
+};
 
 export default App;
