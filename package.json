@@ -25,15 +25,6 @@
 		"predeploy": "npm run build",
 		"deploy": "gh-pages -d build"
 	},
-	"eslint.options": {
-		"configFile": "C:/mypath"
-	},
-	"eslintConfig": {
-		"extends": [
-			"react-app",
-			"react-app/jest"
-		]
-	},
 	"browserslist": {
 		"production": [
 			">0.2%",
