@@ -1,4 +1,4 @@
-import React, { useState, ChangeEventHandler } from 'react';
+import React, { useState, ChangeEvent } from 'react';
 
 export const HW3 = () => {
   // 1️⃣ Раскомментируйте JSX(HW3.tsx) и вы увидите,
@@ -15,8 +15,8 @@ export const HW3 = () => {
     'То, что вы делаете по ночам, то и делает вас богатым. (Аль Капоне)',
   ]);
 
-  const handleChange = (event: ChangeEventHandler<HTMLInputElement>) => {
-    // setCurrentText(ЧЕГО-ТО НЕ ХВАТАЕТ);
+  const handleChange = (event: ChangeEvent<HTMLInputElement>) => {
+    setCurrentText(event.currentTarget.value);
   };
 
   const handleSave = () => {
@@ -41,13 +41,13 @@ export const HW3 = () => {
       <h1 style={{ marginTop: '50px' }}>СПИСОК ДЕЛ НА ДЕНЬ:</h1>
 
       <ol id={'hw03-tasks'}>
-       {ОТРИСОВАТЬ МАССИВ.map((el, index) => {
+       {/* {ОТРИСОВАТЬ МАССИВ.map((el, index) => {
          return (
            <li key={index} id={`hw03-task-${index}`}>
              {el}
            </li>
          );
-       })}
+       })} */}
       </ol>
     </div>
   );
