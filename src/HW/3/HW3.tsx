@@ -19,7 +19,8 @@ export const HW3 = () => {
 
   const handleSave = () => {
 		const newText = [currentText];
-		setTexts([currentText, ...newText]);
+		setTexts([...texts, ...newText]);
+		setCurrentText("");
     // ЗАСЕТАТЬ БЫ ТЕКСТ В texts И НЕ ПОТЕРЯТЬ НАПУТСТВИЕ ИЗ ПРОШЛОГО ВЕКА)
     // А ЗАТЕМ УБРАТЬ ЗА СОБОЙ В currentText
   };
@@ -41,7 +42,7 @@ export const HW3 = () => {
       <h1 style={{ marginTop: '50px' }}>СПИСОК ДЕЛ НА ДЕНЬ:</h1>
 
       <ol id={'hw03-tasks'}>
-       {.map((el, index) => {
+       {texts.map((el, index) => {
          return (
            <li key={index} id={`hw03-task-${index}`}>
              {el}
