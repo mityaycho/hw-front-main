@@ -38,7 +38,7 @@ export const HW4 = () => {
       {texts.map((el, index) => <li 
 			key={index} 
 			id={`hw04-task-${index}`} 
-			className={ЕСЛИ ЧЕТН ? S.chetNechet : ''}>{el}</li>)}
+			className={index % 2 ? 'S.chetNechet' : ''}>{el}</li>)}
       </ol>
     </div>
   );
