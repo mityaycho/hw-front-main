@@ -1,10 +1,12 @@
+import { ChangeEvent } from "react";
+
 type InputPropsType = {
 	currentText: any // НУЖНО ПРОТИПИЗИРОВАТЬ
 	setCurrentText: any // НУЖНО ПРОТИПИЗИРОВАТЬ
 };
 
 export const Input = (props: InputPropsType) => {
-	const onChangeHandler = (event: 'НУЖНО ПРОТИПИЗИРОВАТЬ') => {
+	const onChangeHandler = (event: ChangeEvent<HTMLInputElement>) => {
 		// НУЖНО ДОПИСАТЬ
 	};
 
