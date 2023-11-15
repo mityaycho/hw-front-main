@@ -55,7 +55,6 @@
   },
 	"devDependencies": {
 		"gh-pages": "^6.0.0",
-		"gh-pages-deploy": "^0.5.1",
-		"prettier": "3.0.0"
+		"gh-pages-deploy": "^0.5.1"
 	}
 }
