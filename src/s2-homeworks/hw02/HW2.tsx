@@ -42,7 +42,7 @@ export const filterAffairs = (affairs: AffairType[], filter: string): AffairType
 }
 export const deleteAffair = (affairs: AffairType[], _id: number): AffairType[] => { // need to fix any
 	const deleted = affairs.filter(el => el._id !== _id);
- 
+
 	return deleted; // need to fix
 }
 
