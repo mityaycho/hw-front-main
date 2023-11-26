@@ -3,7 +3,7 @@ import s from './Greeting.module.css'
 
 type GreetingPropsType = {
     name: string; // need to fix any
-    setNameCallback: (event: object) => void; // need to fix any
+    setNameCallback: (event: ChangeEvent<HTMLInputElement>) => void; // need to fix any
     addUser: () => void; // need to fix any
     onBlur: any // need to fix any
     onEnter: any // need to fix any
