@@ -1,35 +1,47 @@
 .greetingForm {
+	border: 1px;
 }
 
 .inputAndButtonContainer {
+	border: 1px;
 }
 
 .error {
+	color: red;
 }
 
 .input {
+	font: 1em sans-serif;
 }
 
 .input:focus {
+	font: 2em sans-serif;
 }
 
 .errorInput {
+	border: 2px red;
 }
 
 .button {
+	color:rgb(111, 111, 25)
 }
 
 .button:focus {
+	color:aqua
 }
 
 .button:active {
+	color:chartreuse;
 }
 
 .button:disabled {
+	color:darkgray;
 }
 
 .text {
+	font-family: 'Courier New', Courier, monospace;
 }
 
 .greeting {
+	color: black;
 }
