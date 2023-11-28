@@ -9,12 +9,12 @@ type GreetingContainerPropsType = {
 
 export const pureAddUser = (name: string, setError: (string: string) => void, setName: (name: string) => void, addUserCallback: (name: string) => void) => {
     // если имя пустое - показать ошибку, иначе - добавить юзера и очистить инпут
-		name === '' ? setError('error') : addUserCallback(name);
+		name === '' ? setError('Ошибка! Введите имя!') : addUserCallback(name);
 		setName('');
 }
 
 export const pureOnBlur = (name: string, setError: (string: string) => void) => { // если имя пустое - показать ошибку
-	if (name === '') setError('error');
+	if (name === '') setError('Ошибка! Введите имя!');
 }
 
 export const pureOnEnter = (e: KeyboardEvent, addUser: () => void) => { // если нажата кнопка Enter - добавить
