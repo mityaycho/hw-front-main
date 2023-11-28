@@ -6,7 +6,7 @@ type GreetingPropsType = {
     setNameCallback: (event: ChangeEvent<HTMLInputElement>) => void; // need to fix any
     addUser: () => void; // need to fix any
     onBlur: () => void; // need to fix any
-    onEnter: (event: KeyboardEvent) => void; // need to fix any
+    onEnter: (event: KeyboardEvent<HTMLInputElement>) => void; // need to fix any
     error: string; // need to fix any
     totalUsers: number; // need to fix any
     lastUserName?: string; // need to fix any
