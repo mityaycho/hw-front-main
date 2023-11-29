@@ -15,7 +15,7 @@
 }
 
 .input:focus {
-	font: 2em sans-serif;
+	border: 1px green;
 }
 
 .errorInput {
