@@ -1,19 +1,25 @@
 .input:focus {
+	color: green;
 }
 
 .input {
+	background-color: aliceblue;
 }
 
 .inputWrapper {
+	background-color:antiquewhite;
 }
 
 .superInput {
+	color:blueviolet;
 }
 
 .errorInput {
+	color: red;
 }
 
 .errorInput:focus {
+	color: red;
 }
 
 .error {
